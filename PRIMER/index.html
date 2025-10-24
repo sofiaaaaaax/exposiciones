@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Primer Estilo y un Nuevo</title>
+  
+  <!-- Parte añadida y creativa por sofia -->
+  <link rel="stylesheet" href="https://unpkg.com/@primer/css@20.5.1/dist/primer.css">
+  
+  <style>
+    /* Estilos yo sofia mejore en esta parte los colores para armonizar con Primer */ 
+    body {
+      background-color: #ffffff; 
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #477ebd; 
+      margin-top: 2rem;
+    }
+    p {
+      color: #cf222e; 
+      font-size: 18px;
+      text-align: center; 
+    }
+
+    /* Estilos de la Tabla, yo sofia mejore el diseño de la tabla para que se vea mas armonioso*/
+    table {
+      width: 90%;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #d0d7de; 
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #0969da; 
+    }
+    tr:nth-child(even) {
+      background-color: #f6f8fa;
+    }
+    tr:hover {
+      background-color: #eaeef2; 
+    }
+
+    /* --- primer 
+    Caja con animación y borde decorativo agregado por sofia --- */
+    .nuevo-primer-estilo {
+      border: 2px dashed #ff9800;
+      background-color: #fff8e1;
+      padding: 20px;
+      margin: 30px auto;
+      width: 60%;
+      text-align: center;
+      color: #333;
+      border-radius: 8px;
+      font-weight: 500;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .nuevo-primer-estilo:hover {
+      transform: scale(1.05); 
+    }
+    /* ------------------------------------------- */
+
+/* --- Parte creativa agregada por sofia --- */
+footer {
+      background-color: #24292f;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 14px;
+    }
+  
+.Header .Header-item:last-child a {
+  margin-left: 20px;
+}
+
+  </style>
+</head>
+<body>
+
+<header class="Header">
+  <div class="Header-item">
+    <a class="Header-link f4 text-bold" href="#">Primer</a>
+    </div>
+    <div class="Header-item Header-item--full"></div>
+    <div class="Header-item">
+    <a class="Header-link" href="#">Inicio </a>
+    <a class="Header-link" href="#">Acerca</a>
+    <a class="Header-link" href="#">Contacto</a>
+  </div>
+</header>
+
+  <h1>Mi primer estilo CSS</h1>
+  <p>Este es un párrafo con mi primer diseño.</p>
+
+  <hr>
+  <h2>Análisis Estructurado del Código</h2>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Elemento</th>
+        <th>Propiedad CSS</th>
+        <th>Valor CSS</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>`<html>`</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Contenedor principal del documento.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`body`</td>
+        <td>`background-color`</td>
+        <td>`lightblue`</td>
+        <td>Fondo de la página azul claro. <span class="nota"></span></td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>`<h1>`</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Título principal. Contenido: "Mi primer estilo CSS"</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`h1`</td>
+        <td>`color`</td>
+        <td>`navy`</td>
+        <td>Color de texto azul marino.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`h1`</td>
+        <td>`text-align`</td>
+        <td>`center`</td>
+        <td>Centrado horizontal.</td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>`<p>`</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Párrafo de texto.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`p`</td>
+        <td>`color`</td>
+        <td>`darkred`</td>
+        <td>Color de texto rojo oscuro.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>`p`</td>
+        <td>`font-size`</td>
+        <td>`18px`</td>
+        <td>Tamaño de fuente de 18 píxeles.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <div class="nuevo-primer-estilo">
+    primer
+  </div>
+
+  <footer>
+    <p>Desarrollado con Primer CSS por Sofía.</p>
+  </footer>
+
+</body>
+</html>

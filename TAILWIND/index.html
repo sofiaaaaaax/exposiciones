@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Calculadora creada por Sofía">
+  <link rel="stylesheet" href="css/output.css">
+  <script src="js/script.js" defer></script>
+  <title>Calculadora de Sofía</title>
+</head>
+
+<body class="bg-gradient-to-br from-indigo-800 via-purple-800 to-pink-700 min-h-screen flex flex-col items-center justify-center p-6 font-sans text-white">
+
+  <!-- Todo lo siguiente es agredo por sofia-->
+  <header class="mb-8 text-center">
+    <h1 class="text-4xl font-extrabold mb-2 drop-shadow-lg">Calculadora </h1>
+    <p class="text-gray-300 italic text-sm">"Donde los números tienen sentido"</p>
+  </header>
+
+  <!-- Caja principal -->
+  <div class="bg-gray-900 bg-opacity-80 rounded-3xl shadow-2xl p-6 w-full max-w-sm border border-purple-500/30 backdrop-blur-md hover:scale-105 transition-transform duration-500">
+
+    <!-- Pantalla -->
+    <div class="bg-gray-800 rounded-2xl p-6 mb-6 text-right shadow-inner">
+      <div id="OpAnterior" class="text-gray-400 text-sm h-6 mb-1"></div>
+      <div id="OpActual" class="text-white text-4xl font-bold break-all tracking-wide">0</div>
+    </div>
+
+    <!-- Botones -->
+    <div class="grid grid-cols-4 gap-3">
+      <button onclick="calculadora.clear()" class="bg-gradient-to-r from-red-500 to-pink-500 hover:from-pink-500 hover:to-red-500 text-white font-semibold py-6 rounded-xl transition-all transform hover:scale-105 active:scale-95 text-xl col-span-2 shadow-md">AC</button>
+      <button onclick="calculadora.delete()" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl shadow-md">Del</button>
+      <button onclick="calculadora.elegir('/')" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-2xl shadow-md" aria-label="Dividir">÷</button>
+
+      <button onclick="calculadora.appendNumber('7')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">7</button>
+      <button onclick="calculadora.appendNumber('8')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">8</button>
+      <button onclick="calculadora.appendNumber('9')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">9</button>
+      <button onclick="calculadora.elegir('*')" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-2xl shadow-md" aria-label="Multiplicar">×</button>
+
+      <button onclick="calculadora.appendNumber('4')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">4</button>
+      <button onclick="calculadora.appendNumber('5')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">5</button>
+      <button onclick="calculadora.appendNumber('6')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">6</button>
+      <button onclick="calculadora.elegir('-')" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-2xl shadow-md" aria-label="Restar">−</button>
+
+      <button onclick="calculadora.appendNumber('1')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">1</button>
+      <button onclick="calculadora.appendNumber('2')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">2</button>
+      <button onclick="calculadora.appendNumber('3')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-xl">3</button>
+      <button onclick="calculadora.elegir('+')" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-2xl shadow-md" aria-label="Sumar">+</button>
+
+      <button onclick="calculadora.appendNumber('0')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-2xl">0</button>
+      <button onclick="calculadora.appendNumber('.')" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-6 rounded-xl transition transform hover:scale-105 active:scale-95 text-2xl">.</button>
+      <button onclick="calculadora.calcular()" class="bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-6 rounded-xl transition-all transform hover:scale-110 active:scale-95 text-xl col-span-2 shadow-lg">=</button>
+    </div>
+  </div>
+
+  <footer class="mt-8 text-center text-sm text-gray-300 opacity-70">
+    <p>Creada con <span class="text-pink-400">Tailwind</span> por Sofía</p>
+  </footer>
+</body>
+</html>

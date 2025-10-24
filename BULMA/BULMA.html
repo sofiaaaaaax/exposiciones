@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo básico con Bulma</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+<!-- Parte añadida y creativa por sofia -->
+ 
+<style>
+    body {
+      background: linear-gradient(135deg, #6c63ff, #00d1b2);
+      color: #fff;
+      min-height: 100vh;
+    }
+    .card {
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    footer {
+      background: rgba(0,0,0,0.1);
+      padding: 1rem 0;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero principal -->
+  <section class="hero is-link is-bold">
+    <div class="hero-body has-text-centered">
+      <p class="title">
+        Bienvenido al Mundo Bulma 
+      </p>
+      <p class="subtitle">
+        Un lugar donde el CSS no te hace sufrir (tanto)
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="card has-text-centered">
+            <div class="card-content">
+              <p class="title">Hola</p>
+              <p class="subtitle">Mi primer sitio con <strong>Bulma</strong></p>
+              <button class="button is-primary is-large is-rounded">
+                Botón para que Berthel me ponga 5.0 ⭐
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="columns mt-6">
+        <div class="column">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <p class="title">Consejo</p>
+              <p>Usar Bulma te ahorra tiempo y evita peleas con el CSS.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <p class="title">Dato Curioso</p>
+              <p>El nombre “Bulma” viene de un personaje de Dragon Ball (igual que Vegeta, su framework hermano inexistente).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+
+<footer>
+    <p>Desarrollado con Bulma CSS.</p>
+  </footer>
+</body>
+</html>
